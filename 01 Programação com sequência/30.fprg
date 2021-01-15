@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 08:52:06 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjQ4OjA5ICI7MjczOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjUyOjA2ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler dois valores num&#233;ricos inteiros e apresentar o resultado do quadrado da divis&#227;o do primeiro valor em rela&#231;&#227;o ao segundo valor.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler dois valores num&#233;ricos inteiros A e B.&#13;&#10;2 Calcular o quadrado da divis&#227;o do primeiro em rela&#231;&#227;o ao segundo QD = (A-B)^2.&#13;&#10;3 Apresentar o resultado QD.&#13;&#10;"/>
+            <declare name="A, B, QD" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="QD" expression="(A-B)^2"/>
+            <output expression="QD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

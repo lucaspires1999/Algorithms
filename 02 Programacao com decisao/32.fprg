@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 09:07:06 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjU2OjA0ICI7MjczMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjA3OjA2ICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar a leitura de um valor num&#233;rico inteiro positivo ou negativo representado pela vari&#225;vel N e apresentar o valor lido como sendo positivo. Dica: se o valor lido for menor que zero, ele deve ser multiplicado por -1.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler um valor num&#233;rico inteiro positivo ou negativo (N).&#13;&#10;2 Se o valor for (N &lt; 0), calcular X = N*(-1). &#13;&#10;3 Apresentar  o valor de N positivo.&#13;&#10;"/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <if expression="N&lt;0">
+                <then>
+                    <assign variable="N" expression="N*(-1)"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="N" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

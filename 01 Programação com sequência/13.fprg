@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-19 12:10:28 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjEyOjA1OjAzICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjEyOjEwOjI4ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar a leitura de um valor num&#233;rico inteiro e apresentar o resultado do valor lido elevado ao quadrado.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler um valor num&#233;rico inteiro X.&#13;&#10;2 Calcular o quadrado desse valor Y = X^2&#13;&#10;3 Apresentar o valor de Y&#13;&#10;"/>
+            <declare name="X, Y" type="Real" array="False" size=""/>
+            <input variable="X"/>
+            <assign variable="Y" expression="X^2"/>
+            <output expression="Y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

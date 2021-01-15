@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-13 09:38:15 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTI7IjExOjA0OjU4ICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjM4OjE1ICI7NDsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, D, T, O, N, X, Y" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="-1"/>
+            <assign variable="Y" expression="-1"/>
+            <assign variable="I" expression="-1"/>
+            <declare name="A, B" type="Integer" array="True" size="10"/>
+            <declare name="C" type="Integer" array="True" size="20"/>
+            <while expression="X&lt;9 || Y&lt;9">
+                <input variable="N"/>
+                <assign variable="D" expression="N%2"/>
+                <assign variable="T" expression="N%3"/>
+                <assign variable="O" expression="N%5"/>
+                <if expression="(D==0 || T==0) &amp;&amp; X&lt;9">
+                    <then>
+                        <assign variable="X" expression="X+1"/>
+                        <assign variable="A[X]" expression="N"/>
+                        <assign variable="I" expression="I+1"/>
+                        <assign variable="C[I]" expression="N"/>
+                    </then>
+                    <else>
+                        <if expression="O==0 &amp;&amp; Y&lt;9">
+                            <then>
+                                <assign variable="Y" expression="Y+1"/>
+                                <assign variable="B[Y]" expression="N"/>
+                                <assign variable="I" expression="I+1"/>
+                                <assign variable="C[I]" expression="N"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <output expression="C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

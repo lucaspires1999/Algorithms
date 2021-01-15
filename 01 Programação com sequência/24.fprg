@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 06:18:30 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA1OjM5OjMwICI7MjcyOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjE4OjMwICI7MTsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Construir um programa que calcule e apresente em metros por segundo o valor da velocidade de um proj&#233;til que percorre uma dist&#226;ncia em quil&#244;metros a um espa&#231;o de tempo em minutos. Utilize a f&#243;rmula VELOCIDADE = ( DIST&#194;NCIA * 100 ) / (TEMPO * 60)&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler a dist&#226;ncia (D) em real e o tempo (T) em inteiro.&#13;&#10;2 Calcular a velocidade (V) V = (D * 100) / (T * 60)&#13;&#10;3 Apresentar a velocidade V.&#13;&#10;"/>
+            <declare name="D, T, V" type="Real" array="False" size=""/>
+            <input variable="D"/>
+            <input variable="T"/>
+            <assign variable="V" expression="(D * 100) / (T * 60)"/>
+            <output expression="V" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

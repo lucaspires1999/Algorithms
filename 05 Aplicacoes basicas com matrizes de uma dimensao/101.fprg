@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-14 10:38:25 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjExOjE1OjU2ICI7MjcyOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTQ7IjEwOjM4OjI1ICI7MTsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, J" type="Integer" array="False" size=""/>
+            <declare name="NOME" type="String" array="True" size="20"/>
+            <declare name="X" type="String" array="False" size=""/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <comment text="Trecho de entrada de dados"/>
+                <input variable="NOME[I]"/>
+            </for>
+            <comment text="Trecho de processamento de ordena&#231;&#227;o"/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <for variable="J" start="I+1" end="19" direction="inc" step="1">
+                    <if expression="NOME[I]&gt;NOME[J]">
+                        <then>
+                            <assign variable="X" expression="NOME[I]"/>
+                            <assign variable="NOME[I]" expression="NOME[J]"/>
+                            <assign variable="NOME[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="Trecho de sa&#237;da com dados ordenados"/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <output expression="NOME[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

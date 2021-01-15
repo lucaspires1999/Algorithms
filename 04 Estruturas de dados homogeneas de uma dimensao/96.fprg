@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-13 09:45:13 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjM4OjE5ICI7Mjc0MA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjQ1OjEzICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, P, M, R, N" type="Integer" array="False" size=""/>
+            <assign variable="P" expression="0"/>
+            <assign variable="M" expression="0"/>
+            <declare name="A" type="Integer" array="True" size="30"/>
+            <for variable="I" start="0" end="29" direction="inc" step="1">
+                <input variable="N"/>
+                <assign variable="A[I]" expression="N"/>
+                <assign variable="R" expression="N%2"/>
+                <if expression="R=0">
+                    <then>
+                        <assign variable="P" expression="P+1"/>
+                    </then>
+                    <else>
+                        <assign variable="M" expression="M+1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="P" newline="True"/>
+            <output expression="M" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

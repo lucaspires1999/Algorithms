@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 03:25:15 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjAzOjA4OjM0ICI7MjczMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjAzOjI1OjE1ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ATUAL, ANTERIOR, PROXIMO, I" type="Integer" array="False" size=""/>
+            <assign variable="ANTERIOR" expression="0"/>
+            <assign variable="ATUAL" expression="1"/>
+            <assign variable="PROXIMO" expression="1"/>
+            <assign variable="I" expression="1"/>
+            <for variable="I" start="1" end="15" direction="inc" step="1">
+                <if expression="I=1">
+                    <then>
+                        <output expression="ANTERIOR" newline="True"/>
+                        <output expression="ATUAL" newline="True"/>
+                        <output expression="PROXIMO" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="ANTERIOR" expression="ATUAL"/>
+                        <assign variable="ATUAL" expression="PROXIMO"/>
+                        <assign variable="PROXIMO" expression="ATUAL+ANTERIOR"/>
+                        <output expression="PROXIMO" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

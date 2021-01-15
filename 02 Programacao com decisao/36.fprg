@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 10:12:27 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjAxOjU4ICI7MjcyNQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjEyOjI3ICI7MTsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler tr&#234;s valores inteiros representados pelas vari&#225;veis A, B e C e apresentar os valores lidos dispostos em ordem crescente. Dica: propriedade distributiva e troca de valores.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;Ler tr&#234;s valores inteiros A, B e C.&#13;&#10;a) B &lt; A? Se sim, &#13;&#10;X=A&#13;&#10;A=B &#13;&#10;B=X&#13;&#10;C &lt; A? Se sim,&#13;&#10;X = A&#13;&#10;A = C&#13;&#10;C = X&#13;&#10;B &lt; C? Se sim,&#13;&#10;X = C&#13;&#10;C = B&#13;&#10;B = X&#13;&#10;3. Apresentar os valores em ordem crescente.&#13;&#10;A, B, C&#13;&#10;"/>
+            <declare name="A, B, C, X" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="B&lt;A">
+                <then>
+                    <assign variable="X" expression="A"/>
+                    <assign variable="A" expression="B"/>
+                    <assign variable="B" expression="X"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="C&lt;A">
+                <then>
+                    <assign variable="X" expression="A"/>
+                    <assign variable="A" expression="C"/>
+                    <assign variable="C" expression="X"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="C&lt;B">
+                <then>
+                    <assign variable="X" expression="B"/>
+                    <assign variable="B" expression="C"/>
+                    <assign variable="C" expression="X"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="A" newline="True"/>
+            <output expression="B" newline="True"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

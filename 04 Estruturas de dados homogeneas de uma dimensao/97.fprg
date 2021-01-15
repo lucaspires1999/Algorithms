@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-13 09:53:10 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjQ1OjE2ICI7MjczNQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjUzOjEwICI7MTsyODM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, N" type="Integer" array="False" size=""/>
+            <declare name="A, B, C" type="Integer" array="True" size="10"/>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;A[&quot; &amp; I+1 &amp; &quot;]&quot;" newline="True"/>
+                <input variable="N"/>
+                <assign variable="A[I]" expression="N"/>
+                <output expression="&quot;B[&quot; &amp; I+1 &amp; &quot;]&quot;" newline="True"/>
+                <input variable="N"/>
+                <assign variable="B[I]" expression="N"/>
+                <assign variable="C[I]" expression="(A[I]+B[I])^2"/>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <output expression="C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

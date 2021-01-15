@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 05:31:44 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA1OjE5OjM3ICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA1OjMxOjQ0ICI7MTsyODM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Em uma elei&#231;&#227;o sindical concorreram ao cargo de presidente tr&#234;s candidatos. Durante a apura&#231;&#227;o dos votos foram computados votos nulos e em branco, al&#233;m dos votos v&#225;lidos para cada candidato. Deve ser criado um programa de computador que fa&#231;a a leitura da quantidade de votos v&#225;lidos para cada candidato, al&#233;m de tamb&#233;m ler a quantidade de votos nulos e em branco. Ao final, o programa deve apresentar o n&#250;mero total de eleitores; o percentual correspondente de votos v&#225;lidos em rela&#231;&#227;o a quantidade de eleitores; o percentual corresponde de votos v&#225;lidos do candidato A, B, C, votos nulos e em branco em rela&#231;&#227;o a quantidade de eleitores.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler a quantidade de votos para os tr&#234;s candidados A, B e C.&#13;&#10;2 Ler a quantidade de votos nulos (VN) e em branco (VB).&#13;&#10;3 Calcular o n&#250;mero total de eleitores TE = A + B + C + VN + VB.&#13;&#10;4 Calcular o percentual de votos v&#225;lidos em rela&#231;&#227;o a quantidade de eleitores. PVV = ((A+B+C) / TE)*100.&#13;&#10;5 Calcular o percentual correspondente de A, B, C, VN e VB em rela&#231;&#227;o a TE, sendo PA = (A/TE)*100), PB = ((B/TE)*100, PC = ((C/TE)*100, PVB = ((VB/TE)*100 e PVN = ((VN/TE)*100)&#13;&#10;6 Apresentar o TE, PVV, PA, PB, PC, PVB, PVN&#13;&#10;"/>
+            <declare name="A, B, C, VN, VB, TE, PVV, PA, PB, PC, PVB, PVN" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="VN"/>
+            <input variable="VB"/>
+            <assign variable="TE" expression="A + B + C + VN + VB"/>
+            <assign variable="PVV" expression="((A+B+C) / TE)*100"/>
+            <assign variable="PA" expression="(A/TE)*100"/>
+            <assign variable="PB" expression="(B/TE)*100"/>
+            <assign variable="PC" expression="(C/TE)*100"/>
+            <assign variable="PVB" expression="(VB/TE)*100"/>
+            <assign variable="PVN" expression="(VN/TE)*100"/>
+            <output expression="TE" newline="True"/>
+            <output expression="PVV" newline="True"/>
+            <output expression="PA" newline="True"/>
+            <output expression="PB" newline="True"/>
+            <output expression="PC" newline="True"/>
+            <output expression="PVB" newline="True"/>
+            <output expression="PVN" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 06:23:49 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjIxOjU1ICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjIzOjQ5ICI7MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que leia dois valores num&#233;ricos inteiros, os quais devem representar a base e o expoente de uma pot&#234;ncia, calcule a pot&#234;ncia e apresente o resultado obtido.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler dois valores num&#233;ricos inteiro A e B.&#13;&#10;2 Calcular a pot&#234;ncia P = A^B.&#13;&#10;3 Apresentar o resultado da pot&#234;ncia P.&#13;&#10;"/>
+            <declare name="A, B, P" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="P" expression="A^B"/>
+            <output expression="P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

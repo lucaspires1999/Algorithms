@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-22 09:46:11 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjA5OjQwOjE5ICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjA5OjQ2OjExICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NOME, SEXO" type="String" array="False" size=""/>
+            <input variable="NOME"/>
+            <input variable="SEXO"/>
+            <if expression="SEXO==&quot;M&quot; || SEXO==&quot;F&quot;">
+                <then>
+                    <if expression="SEXO==&quot;M&quot;">
+                        <then>
+                            <output expression="&quot;llmo.Sr &quot; &amp;NOME" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;llmo.Sra &quot; &amp;NOME" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Sexo informado invalido&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

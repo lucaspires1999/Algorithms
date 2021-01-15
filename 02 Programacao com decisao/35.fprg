@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 10:01:30 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjUzOjM2ICI7MjczNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjAxOjMwICI7MTsyODIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar a leitura de tr&#234;s valores num&#233;ricos (representados pelas vari&#225;veis A, B e C) e processar o c&#225;lculo da equa&#231;&#227;o completa de segundo grau, utilizando a f&#243;rmula de Bhaskara (considerar para a solu&#231;&#227;o do problema todas as poss&#237;veis condi&#231;&#245;es para delta: delta &lt; 0 &#8211; n&#227;o h&#225; solu&#231;&#227;o real, delta &gt; 0 &#8211; H&#225; duas solu&#231;&#245;es reais e diferentes e, se delta = 0 &#8211; h&#225; apenas uma solu&#231;&#227;o real). Lembre-se de que &#233; completa a equa&#231;&#227;o de segundo grau que possui todos os coeficientes A, B, C diferentes de zero. O programa deve apresentar respostas para todas as condi&#231;&#245;es estabelecidas para delta.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler tr&#234;s valores num&#233;ricos A, B e C.&#13;&#10;2 Processar c&#225;lculo da equa&#231;&#227;o de bhaskara.&#13;&#10;3 Se delta &lt; 0, ent&#227;o escreva &#8220;N&#227;o h&#225; solu&#231;&#227;o real.&#13;&#10;4 Sen&#227;o, se delta &gt; 0, ent&#227;o escreva &#8220;H&#225; duas solu&#231;&#245;es reais e diferentes.&#13;&#10;3 Sen&#227;o, se delta = 0, ent&#227;o escreva &#8220;H&#225; apenas uma solu&#231;&#227;o real&#8221;.&#13;&#10;4 Apresentar a resposta para as condi&#231;&#245;es estabelecidas para delta.&#13;&#10;"/>
+            <declare name="A, B, C, DELTA" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="DELTA" expression="B^2-(4*A*C)"/>
+            <if expression="DELTA&lt;0">
+                <then>
+                    <output expression="&quot;Nao ha solucao real&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="DELTA&gt;0">
+                        <then>
+                            <output expression="&quot;HA DUAS SOLUCOES REAIS&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;HA APENAS UMA SOLUCAO REAL&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

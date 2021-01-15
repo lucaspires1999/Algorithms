@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-22 10:42:16 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjEwOjM0OjM2ICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjEwOjQyOjE2ICI7MTsyODMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="FAT, CONT" type="Integer" array="False" size=""/>
+            <assign variable="FAT" expression="1"/>
+            <assign variable="CONT" expression="1"/>
+            <while expression="CONT &lt;=5">
+                <assign variable="FAT" expression="FAT*CONT"/>
+                <assign variable="CONT" expression="CONT+1"/>
+            </while>
+            <output expression="&quot;5!= &quot; &amp;FAT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

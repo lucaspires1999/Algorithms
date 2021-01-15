@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 02:32:15 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjI2OjQzICI7MjcyNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjMyOjE1ICI7MTsyODMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler dois valores num&#233;ricos inteiros (representados pelas vari&#225;veis A e B) e apresentar o resultado do quadrado da diferen&#231;a do primeiro valor (vari&#225;vel A) em rela&#231;&#227;o ao segundo valor (vari&#225;vel B).&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler dois valores num&#233;ricos inteiros A e B.&#13;&#10;2 Calcular o quadrado da diferen&#231;a de A em rela&#231;&#227;o a B. C = (A &#8211; B) ^ 2.&#13;&#10;3 Apresentar C. &#13;&#10;"/>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="C" expression="(A-B)^2"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

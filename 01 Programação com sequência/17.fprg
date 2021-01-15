@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 02:44:11 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjQxOjE2ICI7MjcyMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjQ0OjExICI7MTsyODI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Construir um programa que leia tr&#234;s valores num&#233;ricos inteiros e apresente como resultado final o valor da soma dos quadrados dos tr&#234;s valores lidos.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler tr&#234;s valores num&#233;ricos inteiros A, B e C.&#13;&#10;2 Calcular a soma dos quadrados dos tr&#234;s valores lidos. Q = (A^2) + (B^2) + (C^2).&#13;&#10;3 Apresentar o valor de Q&#13;&#10;"/>
+            <declare name="A, B, C, Q" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="Q" expression="(A^2)+(B^2)+(C^2)"/>
+            <output expression="Q" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

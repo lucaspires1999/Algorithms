@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-18 10:17:54 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTg7IjEwOjA1OjU0ICI7MjczMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTg7IjEwOjE3OjU0ICI7MTsyODQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar o c&#225;lculo da quantidade de litros de um combust&#237;vel gasta em uma viagem, utilizando um autom&#243;vel que faz 12 quil&#244;metros por litro. Para obter o c&#225;lculo, o usu&#225;rio deve fornecer o tempo gasto e a velocidade durante a viagem. Desta forma, ser&#225; poss&#237;vel obter a dist&#226;ncia percorrida com a f&#243;rmula DIST&#194;NCIA = TEMPO * VELOCIDADE. A partir do valor da dist&#226;ncia, basta calcular a quantidade de litros de combust&#237;vel utilizada na viagem com a f&#243;rmula LITROS_USADOS = DIST&#194;NCIA/12. O programa deve apresentar os valores da velocidade m&#233;dia, tempo gasto na viagem, a dist&#226;ncia percorrida e a quantidade de litros utilizada na viagem.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler o tempo gasto (TG).&#13;&#10;2 Ler a velocidade media (VM).&#13;&#10;3 Calcular a dist&#226;ncia D = TG * VM.&#13;&#10;Calcular a quantidade de litros de combust&#237;vel QL = D / 12.&#13;&#10;4 Apresentar os valores da velocidade m&#233;dia (VM), tempo gasto (TG), a dist&#226;ncia (D) e a quantidade de litros (QL).&#13;&#10;"/>
+            <declare name="TG, VM, D, QL" type="Integer" array="False" size=""/>
+            <input variable="TG"/>
+            <input variable="VM"/>
+            <assign variable="D" expression="TG*VM"/>
+            <assign variable="QL" expression="D/12"/>
+            <output expression="VM" newline="True"/>
+            <output expression="TG" newline="True"/>
+            <output expression="D" newline="True"/>
+            <output expression="QL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

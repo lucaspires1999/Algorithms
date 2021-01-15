@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-17 10:55:15 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjEwOjQyOjI3ICI7MjczMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjEwOjU1OjE1ICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa de computador que calcule a &#225;rea de uma circunfer&#234;ncia e apresente a medida da &#225;rea calculada.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler um valor para o raio, no caso vari&#225;vel R.&#13;&#10;2 Estabelecer que pi venha a possuir o valor 3.14&#13;&#10;3 Efetuar o c&#225;lculo da &#225;rea, elevando ao quadrado o valor de R e multiplicando esse valor por pi.&#13;&#10;4 Apresentar o valor da vari&#225;vel A.&#13;&#10;"/>
+            <declare name="P, R, A" type="Real" array="False" size=""/>
+            <assign variable="P" expression="3.14"/>
+            <input variable="R"/>
+            <assign variable="A" expression="P*R^2"/>
+            <output expression="A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

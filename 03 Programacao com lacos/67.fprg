@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 08:00:55 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA3OjUyOjUwICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA4OjAwOjU1ICI7MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NOME, RESP" type="String" array="False" size=""/>
+            <declare name="L, C, A, VT" type="Real" array="False" size=""/>
+            <assign variable="RESP" expression="&quot;S&quot;"/>
+            <assign variable="VT" expression="0"/>
+            <while expression="RESP=&quot;S&quot;">
+                <input variable="NOME"/>
+                <input variable="L"/>
+                <input variable="C"/>
+                <assign variable="A" expression="L*C"/>
+                <assign variable="VT" expression="VT+A"/>
+                <output expression="&quot;AREA &quot; &amp; NOME &amp; &quot; = &quot; &amp; A" newline="True"/>
+                <output expression="&quot;Deseja continuar?&quot;" newline="True"/>
+                <input variable="RESP"/>
+            </while>
+            <output expression="&quot;VALOR AREA TOTAL = &quot; &amp; VT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

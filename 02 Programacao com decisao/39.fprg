@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 10:41:07 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjMzOjEwICI7MjcxOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjQxOjA3ICI7MTsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler cinco valores num&#233;ricos inteiros (vari&#225;veis A, B, C, D e E), identificar e apresentar o maior e o menor valores informados. N&#227;o executar a ordena&#231;&#227;o dos valores.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1. Ler cinco valores num&#233;ricos inteiros, A, B, C, D e E.&#13;&#10;2. Definir um local para armazenar o maior e o menor valor, X e Y.&#13;&#10;3. Definir o maior valor&#13;&#10;X = A. &#13;&#10;Se B &gt; X, X = B.&#13;&#10;Se C &gt; X, X = C.&#13;&#10;Se D &gt; X, X = D.&#13;&#10;Se E &gt; X, X = E.&#13;&#10;4. Definir o menor valor&#13;&#10;Y = A. &#13;&#10;Se B &lt; Y, Y = B.&#13;&#10;Se C &lt; Y, Y = C.&#13;&#10;Se D &lt; Y, Y = D.&#13;&#10;Se E &lt; Y, Y = E.&#13;&#10;5. Apresentar o maior e o menor valor X e Y.&#13;&#10;"/>
+            <declare name="A, B, C, D, E, X, Y" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <input variable="E"/>
+            <assign variable="X" expression="A"/>
+            <assign variable="Y" expression="A"/>
+            <if expression="X&lt;B">
+                <then>
+                    <assign variable="X" expression="B"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="X&lt;C">
+                <then>
+                    <assign variable="X" expression="C"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="X&lt;D">
+                <then>
+                    <assign variable="X" expression="D"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="X&lt;E">
+                <then>
+                    <assign variable="X" expression="E"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Y&gt;B">
+                <then>
+                    <assign variable="Y" expression="B"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Y&gt;C">
+                <then>
+                    <assign variable="Y" expression="C"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Y&gt;D">
+                <then>
+                    <assign variable="Y" expression="D"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="Y&gt;E">
+                <then>
+                    <assign variable="Y" expression="E"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="X" newline="True"/>
+            <output expression="Y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

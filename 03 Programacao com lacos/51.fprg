@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-23 09:57:59 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjEwOjU2OjA1ICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjM7IjA5OjU3OjU5ICI7MTsyODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="R, N" type="Integer" array="False" size=""/>
+            <for variable="N" start="15" end="200" direction="inc" step="1">
+                <assign variable="R" expression="N^2"/>
+                <output expression="R" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

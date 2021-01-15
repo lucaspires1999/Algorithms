@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 03:35:28 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjAzOjI2OjM3ICI7MjczNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjAzOjM1OjI4ICI7MTsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="C, F" type="Integer" array="False" size=""/>
+            <for variable="C" start="10" end="100" direction="inc" step="10">
+                <assign variable="F" expression="C*(9/5)+32"/>
+                <output expression="&quot;C =&quot; &amp; C &amp; &quot; e F =&quot; &amp; F" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

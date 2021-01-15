@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 08:48:01 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjQ0OjI5ICI7MjczNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjQ4OjAxICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Construir um programa que leia um valor num&#233;rico inteiro e apresente como resultado os seus valores sucessor e antecessor. &#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler um valor num&#233;rico inteiro (N).&#13;&#10;2 Calcular o seu antecessor (A) A = N - 1.&#13;&#10;3 Calcular o seu sucessor (S) S = N + 1.&#13;&#10;4 Apresentar o valor de A e S.&#13;&#10;"/>
+            <declare name="N, A, S" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <assign variable="A" expression="N-1"/>
+            <assign variable="S" expression="N+1"/>
+            <output expression="A" newline="True"/>
+            <output expression="S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

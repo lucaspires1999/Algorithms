@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-27 12:53:54 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjc7IjEyOjQ3OjQwICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjc7IjEyOjUzOjU0ICI7MjsyODQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="String" array="True" size="10"/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <input variable="N[I]"/>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <output expression="N[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

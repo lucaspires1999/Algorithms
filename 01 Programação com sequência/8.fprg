@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-18 09:24:53 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTg7IjA5OjE5OjE2ICI7Mjc0Mg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTg7IjA5OjI0OjUzICI7MTsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar o c&#225;lculo e apresentar o valor de uma presta&#231;&#227;o de um bem em atraso, utilizando a f&#243;rmula PRESTA&#199;&#195;O = VALOR + (VALOR * (TAXA/100) * TEMPO).&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler o valor (V).&#13;&#10;2 Ler a taxa (X).&#13;&#10;3 Ler o tempo (T).&#13;&#10;4 Calcular a presta&#231;&#227;o (P) P = V + (V * (X/100) * T).&#13;&#10;5 Apresentar o valor da presta&#231;&#227;o (P)&#13;&#10;"/>
+            <declare name="V, X, P, T" type="Real" array="False" size=""/>
+            <input variable="V"/>
+            <input variable="X"/>
+            <input variable="T"/>
+            <assign variable="P" expression="V+(V*(X/100)*T)"/>
+            <output expression="P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

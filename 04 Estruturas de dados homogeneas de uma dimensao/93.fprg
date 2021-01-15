@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-12 11:04:51 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTI7IjEwOjUwOjA4ICI7MjcyMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTI7IjExOjA0OjUxICI7MTsyODI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, R, N, X, Y" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="-1"/>
+            <assign variable="Y" expression="-1"/>
+            <declare name="A, B" type="Integer" array="True" size="6"/>
+            <declare name="C" type="Integer" array="True" size="12"/>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <input variable="N"/>
+                <assign variable="R" expression="N%2"/>
+                <if expression="R=0">
+                    <then>
+                        <if expression="X&lt;6">
+                            <then>
+                                <assign variable="X" expression="X+1"/>
+                                <assign variable="A[X]" expression="N"/>
+                                <assign variable="C[I]" expression="N"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="Y&lt;6">
+                            <then>
+                                <assign variable="Y" expression="Y+1"/>
+                                <assign variable="B[Y]" expression="N"/>
+                                <assign variable="C[I]" expression="N"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <output expression="C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-07 11:28:56 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDc7IjExOjAzOjA5ICI7MjcyNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDc7IjExOjI4OjU2ICI7MTsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Real" array="True" size="5"/>
+            <declare name="D" type="Real" array="True" size="15"/>
+            <declare name="I, X" type="Integer" array="False" size=""/>
+            <assign variable="X" expression="0"/>
+            <for variable="I" start="0" end="4" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="D[X]" expression="A[I]"/>
+                <assign variable="X" expression="X+1"/>
+            </for>
+            <for variable="I" start="0" end="4" direction="inc" step="1">
+                <input variable="B[I]"/>
+                <assign variable="D[X]" expression="B[I]"/>
+                <assign variable="X" expression="X+1"/>
+            </for>
+            <for variable="I" start="0" end="4" direction="inc" step="1">
+                <input variable="C[I]"/>
+                <assign variable="D[X]" expression="C[I]"/>
+                <assign variable="X" expression="X+1"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="D[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

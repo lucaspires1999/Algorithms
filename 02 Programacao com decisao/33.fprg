@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 09:35:19 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjA3OjEyICI7MjcyOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjM1OjE5ICI7MTsyODQ1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Realizar a leitura dos valores de quatro notas escolares bimestrais de um aluno representadas pelas vari&#225;veis N1, N2, N3 e N4. Calcular a m&#233;dia aritm&#233;tica (vari&#225;vel MD) desse aluno e representar a mensagem &#8220;Aprovado&#8221; se a m&#233;dia obtida for maior ou igual a 5; caso contr&#225;rio, apresentar a mensagem &#8220;Reprovado&#8221;. Informar tamb&#233;m, ap&#243;s a apresenta&#231;&#227;o das mensagens, o valor da m&#233;dia obtida pelo aluno.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler  quatro notas escolares N1, N2, N3 e N4. &#13;&#10;2 Calcular a m&#233;dia aritm&#233;tica MD = (N1 + N2 + N3 + N4)/4&#13;&#10;3 Se MD&gt;=5, apresentar &#8220;Aprovado&#8221;.&#13;&#10;4 Sen&#227;o, apresentar &#8220;Reprovado&#8221;&#13;&#10;5 Apresentar MD&#13;&#10;"/>
+            <declare name="N1, N2, N3, N4, MD" type="Real" array="False" size=""/>
+            <input variable="N1"/>
+            <input variable="N2"/>
+            <input variable="N3"/>
+            <input variable="N4"/>
+            <assign variable="MD" expression="(N1+N2+N3+N4)/4"/>
+            <if expression="MD&gt;=5">
+                <then>
+                    <output expression="&quot;APROVADO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;REPROVADO&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="MD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

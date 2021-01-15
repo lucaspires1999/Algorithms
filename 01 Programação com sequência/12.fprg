@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-19 12:04:27 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjExOjU4OjQyICI7MjczOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjEyOjA0OjI3ICI7MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que calcule e apresente o valor de um volume de uma caixa retangular, utilizando a formula VOLUME = COMPRIMENTO * LARGURA * ALTURA.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler comprimento (C).&#13;&#10;2 Ler largura (L).&#13;&#10;3 Ler altura (A).&#13;&#10;4 Calcular o volume (V) V = C * L * A.&#13;&#10;5 Apresentar o volume (V)&#13;&#10;"/>
+            <declare name="C, L, A, V" type="Real" array="False" size=""/>
+            <input variable="C"/>
+            <input variable="L"/>
+            <input variable="A"/>
+            <assign variable="V" expression="C*L*A"/>
+            <output expression="V" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

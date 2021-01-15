@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-17 11:05:37 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjEwOjU3OjA5ICI7MjczNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjExOjA1OjM3ICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="ECERCICIO&#13;&#10;Desenvolver um programa que calcule o sal&#225;rio l&#237;quido de um professor. Para elaborar o programa, &#233; necess&#225;rio possuir alguns dados, tais como valor da hora-aula, n&#250;mero de horas trabalhadas no m&#234;s e percentual de desconto do INSS. Em primeiro lugar, deve-se estabelecer o seu sal&#225;rio bruto para fazer  desconto e ter o valor do sal&#225;rio l&#237;quido.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Estabelecer a leitura da vari&#225;vel HT(horas trabalhadas no m&#234;s)&#13;&#10;2 Estabelecer a leitura da vari&#225;vel VH(valor hora-aula)&#13;&#10;3 Estabelecer a leitura da vari&#225;vel PD(percentual de desconto)&#13;&#10;4 Calcular o sal&#225;rio bruto(SB), sendo a multiplica&#231;&#227;o das vari&#225;veis HT e VH.&#13;&#10;5 Calcular o total de desconto (TD) com base no valor de PD dividido por 100.&#13;&#10;6 Calcular o sal&#225;rio l&#237;quido (SL), deduzindo o desconto no sal&#225;rio bruto.&#13;&#10;7 Apresentar os valores dos sal&#225;rios bruto e l&#237;quido: SB e SL.&#13;&#10;"/>
+            <declare name="HT, VH, PD, SB, TD, SL" type="Integer" array="False" size=""/>
+            <input variable="HT"/>
+            <input variable="VH"/>
+            <input variable="PD"/>
+            <assign variable="SB" expression="HT*VH"/>
+            <assign variable="TD" expression="(PD/100)*SB"/>
+            <assign variable="SL" expression="SB-TD"/>
+            <output expression="SB" newline="True"/>
+            <output expression="SL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

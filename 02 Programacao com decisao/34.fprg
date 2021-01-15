@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 09:43:16 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjM1OjIyICI7MjczMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA5OjQzOjE2ICI7MTsyODQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler os valores de quatro notas escolares bimestrais de um aluno representadas pelas vari&#225;veis N1, N2, N3 e N4. Calcular a m&#233;dia aritm&#233;tica (vari&#225;vel MD1) desse aluno e apresentar a mensagem &#8220;Aprovado&#8221; se a m&#233;dia obtida for maior ou igual a 7; caso contr&#225;rio, o programa deve solicitar a quinta nota (nota de exame, representada pela vari&#225;vel NE) do aluno e calcular uma nova m&#233;dia aritm&#233;tica (vari&#225;vel MD2) entre a nota de exame e a primeira m&#233;dia aritm&#233;tica. Se o valor da nova m&#233;dia for maior ou igual a cinco, apresentar a mensagem &#8220;Aprovado em exame&#8221;; caso contr&#225;rio, apresentar a mensagem &#8220;Reprovado&#8221;. Informar tamb&#233;m, ap&#243;s a apresenta&#231;&#227;o das mensagens, o valor da m&#233;dia obtida pelo aluno. &#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler quatro notas N1, N2, N3 e N4.&#13;&#10;2 Calcular a m&#233;dia aritm&#233;tica MD1 = (N1 + N2 + N3 + N4)/4&#13;&#10;3 Se MD1 &gt;=7, escreva &#8220;Aprovado&#8221;&#13;&#10;4 Ler a quinta nota NE.&#13;&#10;5 Sen&#227;o, calcular MD2 = (MD1 + NE)/2.&#13;&#10;6 Se MD2 &gt;= 5, escreva &#8220;Aprovado em exame&#8221;.&#13;&#10;7 Sen&#227;o, escreva &#8220;Reprovado&#8221;&#13;&#10;"/>
+            <declare name="N1, N2, N3, N4, NE, MD1, MD2" type="Real" array="False" size=""/>
+            <input variable="N1"/>
+            <input variable="N2"/>
+            <input variable="N3"/>
+            <input variable="N4"/>
+            <assign variable="MD1" expression="(N1+N2+N3+N4)/4"/>
+            <if expression="MD1&gt;=7">
+                <then>
+                    <output expression="&quot;APROVADO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <input variable="NE"/>
+                    <assign variable="MD2" expression="(MD1+NE)/2"/>
+                    <if expression="MD2&gt;=5">
+                        <then>
+                            <output expression="&quot;APROVADO EM EXAME&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;REPROVADO&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

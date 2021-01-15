@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-19 11:55:02 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTg7IjEwOjE3OjU3ICI7MjczNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjExOjU1OjAyICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler quatro valores num&#233;ricos inteiros e apresentar o resultado das adi&#231;&#245;es e das multiplica&#231;&#245;es utilizando o mesmo racioc&#237;nio aplicado quando do uso de propriedades distributivas para a m&#225;xima combina&#231;&#227;o poss&#237;vel entre as quatro vari&#225;veis. N&#227;o &#233; para calcular a propriedade distributiva, apenas para usar a sua forma de combina&#231;&#227;o. Considerando a leitura de valores para as vari&#225;veis A, B, C e D, devem ser feitas seis adi&#231;&#245;es e seis multiplica&#231;&#245;es, ou seja, deve ser combinada a vari&#225;vel.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler 4 vari&#225;veis inteiras A, B, C e D.&#13;&#10;2 Calcular a soma SAB = A + B, SAC = A + C, SAD = A + D, SBC = B + C, SBD = B + D e SCD = C + D.&#13;&#10;3 Calcular a multiplica&#231;&#227;o MAB = A * B, MAC = A * C, MAD = A * D, MBC = B * C, MBD = B * D e MCD = C * D.&#13;&#10;4 Apresentar SAB, SAC, SAD, SBC, SBD, SCD, MAB, MAC, MAD, MBC, MBD, MCD.&#13;&#10;"/>
+            <declare name="A, B, C, D, SAB, SAC, SAD, SBC, SBD, SCD, MAB, MAC, MAD, MBC, MBD, MCD" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <assign variable="SAB" expression="A + B"/>
+            <assign variable="SAC" expression="A + C"/>
+            <assign variable="SAD" expression="A + D"/>
+            <assign variable="SBC" expression="B + C"/>
+            <assign variable="SBD" expression="B + D"/>
+            <assign variable="SCD" expression="C + D"/>
+            <assign variable="MAB" expression="A * B"/>
+            <assign variable="MAC" expression="A * C"/>
+            <assign variable="MAD" expression="A * D"/>
+            <assign variable="MBC" expression="B * C"/>
+            <assign variable="MBD" expression="B * D"/>
+            <assign variable="MCD" expression="C * D"/>
+            <output expression="SAB" newline="True"/>
+            <output expression="SAC" newline="True"/>
+            <output expression="SAD" newline="True"/>
+            <output expression="SBC" newline="True"/>
+            <output expression="SBD" newline="True"/>
+            <output expression="SCD" newline="True"/>
+            <output expression="MAB" newline="True"/>
+            <output expression="MAC" newline="True"/>
+            <output expression="MAD" newline="True"/>
+            <output expression="MBC" newline="True"/>
+            <output expression="MBD" newline="True"/>
+            <output expression="MCD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

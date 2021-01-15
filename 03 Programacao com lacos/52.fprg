@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-23 10:05:09 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjM7IjA5OjU4OjAyICI7MjczNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjM7IjEwOjA1OjA5ICI7MTsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, R, I" type="Integer" array="False" size=""/>
+            <input variable="N"/>
+            <for variable="I" start="1" end="10" direction="inc" step="1">
+                <assign variable="R" expression="N*I"/>
+                <output expression="N&amp; &quot;X&quot; &amp;I&amp; &quot;=&quot; &amp;R" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

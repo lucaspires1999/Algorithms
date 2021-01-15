@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 06:35:22 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjI2OjEyICI7MjcyNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjM1OjIyICI7MTsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que calcule a raiz de base qualquer com &#237;ndice qualquer.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler a base (B) e &#237;ndice (I).&#13;&#10;2 Calcular a raiz (R) R = B^(1/I).&#13;&#10;3 Apresentar o resultado R.&#13;&#10;"/>
+            <declare name="B, I, R" type="Integer" array="False" size=""/>
+            <input variable="B"/>
+            <input variable="I"/>
+            <assign variable="R" expression="B^(1/I)"/>
+            <output expression="R" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

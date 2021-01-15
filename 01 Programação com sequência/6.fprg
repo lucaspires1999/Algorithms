@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-17 11:33:34 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjExOjEzOjI5ICI7MjczMg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjExOjMzOjM0ICI7MTsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Calcular e apresentar o valor do volume de uma lata de &#243;leo, utilizando a f&#243;rmula VOLUME = 3.14 * R^2 * ALTURA"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Definir o valor de PI = 3.14.&#13;&#10;2 Ler o valor do raio (R).&#13;&#10;3 Ler o valor da altura (A).&#13;&#10;4 Calcular o volume (V).&#13;&#10;5 Apresentar o volume (V).&#13;&#10;"/>
+            <declare name="P, R, A, V" type="Real" array="False" size=""/>
+            <assign variable="P" expression="3.14"/>
+            <input variable="R"/>
+            <input variable="A"/>
+            <assign variable="V" expression="P*R^2*A"/>
+            <output expression="V" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

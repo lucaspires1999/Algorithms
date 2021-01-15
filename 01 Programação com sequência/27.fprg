@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 06:26:09 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjIzOjUyICI7MjcyNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjI2OjA5ICI7MTsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que leia uma medida em p&#233;s e apresente o seu valor convertido em metros, lembrando que um p&#233; mede 0,3048 metro, ou seja, um p&#233; &#233; igual a 30,48 cent&#237;metros.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler a medida em p&#233;s (P).&#13;&#10;2 Calcular a convers&#227;o para metros (M). M = P * 0.3048.&#13;&#10;3 Apresentar o resultado M.&#13;&#10;"/>
+            <declare name="P, M" type="Real" array="False" size=""/>
+            <input variable="P"/>
+            <assign variable="M" expression="P * 0.3048"/>
+            <output expression="M" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

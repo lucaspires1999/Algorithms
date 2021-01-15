@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-19 11:58:38 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjExOjU1OjA1ICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTk7IjExOjU4OjM4ICI7MTsyODUx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler dois valores para as vari&#225;veis A e B e efetuar a troca dos valores de forma que a vari&#225;vel A passe a possuir o valor da vari&#225;vel B e a vari&#225;vel B passe a possuir o valor da vari&#225;vel A. Apresentar os valores ap&#243;s a efetiva&#231;&#227;o do processamento da troca. &#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler um valor para a vari&#225;vel A e outro valor para a vari&#225;vel B.&#13;&#10;2 Efetuar a troca dos valores das vari&#225;veis com o auxilio de uma terceira vari&#225;vel.&#13;&#10;3 Apresentar o valor da vari&#225;vel A e B.&#13;&#10;"/>
+            <declare name="A, B, X" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="X" expression="A"/>
+            <assign variable="A" expression="B"/>
+            <assign variable="B" expression="X"/>
+            <output expression="A" newline="True"/>
+            <output expression="B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

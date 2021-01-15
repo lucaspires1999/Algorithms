@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 06:29:06 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA1OjU1OjUyICI7MjczNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA2OjI5OjA2ICI7MTsyODQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, S, CONT, FAT, CONT2" type="Real" array="False" size=""/>
+            <assign variable="FAT" expression="1"/>
+            <assign variable="S" expression="0"/>
+            <for variable="CONT" start="1" end="15" direction="inc" step="1">
+                <input variable="N"/>
+                <for variable="CONT2" start="1" end="N" direction="inc" step="1">
+                    <assign variable="FAT" expression="FAT*CONT2"/>
+                </for>
+                <assign variable="S" expression="S+FAT"/>
+            </for>
+            <output expression="S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

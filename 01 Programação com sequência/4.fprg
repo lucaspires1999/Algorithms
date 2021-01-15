@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-17 11:10:58 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjExOjA2OjA0ICI7MjcyNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMTc7IjExOjEwOjU4ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler a temperatura em graus Celsius e apresenta-la convertida em graus Fahrenheit. A f&#243;rmula de convers&#227;o &#233; F = (9*C+160)/5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler a temperatura em graus Celsius.&#13;&#10;2 Converter a temperatura de graus Celsius para Fahrenheit.&#13;&#10;3 Apresentar a temperatura em graus Fahrenheit&#13;&#10;"/>
+            <declare name="F, C" type="Real" array="False" size=""/>
+            <input variable="C"/>
+            <assign variable="F" expression="(9*C+160)/5.0"/>
+            <output expression="F" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

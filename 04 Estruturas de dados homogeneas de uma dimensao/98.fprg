@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-13 10:41:40 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjA5OjUzOjEzICI7MjczMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMTM7IjEwOjQxOjQwICI7MTsyODI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, R, M" type="Integer" array="False" size=""/>
+            <assign variable="M" expression="0"/>
+            <declare name="A, B" type="Integer" array="True" size="6"/>
+            <for variable="I" start="0" end="5" direction="inc" step="1">
+                <if expression="I==5">
+                    <then>
+                        <input variable="A[I]"/>
+                        <assign variable="M" expression="0"/>
+                        <assign variable="B[M]" expression="A[I]"/>
+                    </then>
+                    <else>
+                        <input variable="A[I]"/>
+                        <assign variable="M" expression="M+1"/>
+                        <assign variable="B[M]" expression="A[I]"/>
+                    </else>
+                </if>
+            </for>
+            <for variable="M" start="0" end="5" direction="inc" step="1">
+                <output expression="B[M]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 05:39:26 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA1OjMxOjQ3ICI7MjcyOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA1OjM5OjI2ICI7MTsyODQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que leia dois valores num&#233;ricos reais desconhecidos representados pelas vari&#225;veis A e B. Calcular e apresentar os resultados das quatro opera&#231;&#245;es aritm&#233;ticas b&#225;sicas.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler dois valores reais A e B.&#13;&#10;2 Calcular o resultado das quatro opera&#231;&#245;es aritm&#233;ticas b&#225;sicas. AAB = A + B, SAB = A &#8211; B, MAB = A * B e DAB = A/B.&#13;&#10;3 Apresentar AAB, SAB, MAB e DAB.  &#13;&#10;"/>
+            <declare name="A, B, AAB, SAB, MAB, DAB" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="AAB" expression="A + B"/>
+            <assign variable="SAB" expression="A-B"/>
+            <assign variable="MAB" expression="A*B"/>
+            <assign variable="DAB" expression="A/B"/>
+            <output expression="AAB" newline="True"/>
+            <output expression="SAB" newline="True"/>
+            <output expression="MAB" newline="True"/>
+            <output expression="DAB" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

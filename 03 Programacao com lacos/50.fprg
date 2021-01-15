@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-22 10:56:03 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjEwOjQyOjIxICI7MjcyMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjI7IjEwOjU2OjAzICI7MjsyODM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RESP" type="String" array="False" size=""/>
+            <declare name="FAT, CONT, N" type="Integer" array="False" size=""/>
+            <assign variable="RESP" expression="&quot;S&quot;"/>
+            <while expression="RESP==&quot;S&quot;">
+                <assign variable="FAT" expression="1"/>
+                <input variable="N"/>
+                <for variable="CONT" start="1" end="N" direction="inc" step="1">
+                    <assign variable="FAT" expression="FAT*CONT"/>
+                </for>
+                <output expression="N&amp; &quot;!=&quot; &amp;FAT" newline="True"/>
+                <output expression="&quot;Continuar?&quot;" newline="True"/>
+                <input variable="RESP"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

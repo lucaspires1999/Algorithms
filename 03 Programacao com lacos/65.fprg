@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 07:47:42 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA3OjM3OjA5ICI7Mjc0MQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA3OjQ3OjQyICI7MTsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, C, F, R, C2" type="Integer" array="False" size=""/>
+            <for variable="C" start="1" end="10" direction="inc" step="1">
+                <assign variable="R" expression="C%2"/>
+                <if expression="R!=0">
+                    <then>
+                        <assign variable="F" expression="1"/>
+                        <for variable="C2" start="1" end="C" direction="inc" step="1">
+                            <assign variable="F" expression="F*C2"/>
+                        </for>
+                        <output expression="F" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

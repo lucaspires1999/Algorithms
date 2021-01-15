@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 06:21:50 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjE4OjMxICI7MjcyOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjA2OjIxOjUwICI7MTsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa de computador que calcule e apresente o valor do volume de uma esfera. Utilize a f&#243;rmula VOLUME = (4/3) * 3.14 * (RAIO ^3)&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler o raio (R).&#13;&#10;2 Definir a constante quatro ter&#231;os QT = 4/3 e PI = 3.14.&#13;&#10;3 Calcular o volume (V) V = (QT) * PI * (R ^3).&#13;&#10;4 Apresentar o valor do volume (V).&#13;&#10;"/>
+            <declare name="QT, P, R, V" type="Real" array="False" size=""/>
+            <assign variable="P" expression="3.14"/>
+            <assign variable="QT" expression="4/3"/>
+            <input variable="R"/>
+            <assign variable="V" expression="(QT) * PI * (R ^ 3)"/>
+            <output expression="V" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

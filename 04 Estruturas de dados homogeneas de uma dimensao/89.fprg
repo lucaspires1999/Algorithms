@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-09 08:27:30 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDk7IjA4OjIwOjM4ICI7MjczNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDk7IjA4OjI3OjMwICI7MTsyODQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <declare name="A, B" type="Integer" array="True" size="25"/>
+            <for variable="I" start="0" end="24" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="B[I]" expression="(A[I]*9/5)+32"/>
+            </for>
+            <for variable="I" start="0" end="24" direction="inc" step="1">
+                <output expression="A[I] &amp; &quot; &quot; &amp; B[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-06 08:21:25 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDY7IjA4OjAzOjU0ICI7MjczMg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDY7IjA4OjIxOjI1ICI7MTsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, CONT, FAT, X" type="Integer" array="False" size=""/>
+            <assign variable="I" expression="15"/>
+            <declare name="A, B" type="Integer" array="True" size="I"/>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <assign variable="FAT" expression="1"/>
+                <input variable="A[I]"/>
+                <assign variable="X" expression="A[I]"/>
+                <for variable="CONT" start="1" end="X" direction="inc" step="1">
+                    <assign variable="FAT" expression="FAT*CONT"/>
+                </for>
+                <assign variable="B[I]" expression="FAT"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="A[I] &amp; &quot; &quot; &amp; B[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 02:35:04 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjMyOjE5ICI7MjcyNg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjM1OjA0ICI7MTsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que apresente o valor da convers&#227;o em real (R$) de um valor lido em d&#243;lar (US$). O programa deve solicitar o valor da cota&#231;&#227;o do d&#243;lar e tamb&#233;m a quantidade de d&#243;lares dispon&#237;vel com o usu&#225;rio.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler o valor da cota&#231;&#227;o do d&#243;lar.&#13;&#10;2 Ler a quantidade de d&#243;lares com o usu&#225;rio.&#13;&#10;3 Converter a quantidade de d&#243;lares com o usu&#225;rio para real. R = Q * C.&#13;&#10;4 Apresente o valor da convers&#227;o em R.&#13;&#10;"/>
+            <declare name="Q, C, R" type="Real" array="False" size=""/>
+            <input variable="Q"/>
+            <input variable="C"/>
+            <assign variable="R" expression="Q*C"/>
+            <output expression="R" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

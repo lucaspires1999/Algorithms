@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 10:31:29 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjEyOjMxICI7MjcxOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjMxOjI5ICI7MTsyODM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Fazer a leitura de quatro valores num&#233;ricos inteiros representados pelas vari&#225;veis A, B, C  e D. Apresentar apenas os valores que sejam divis&#237;veis por 2 e 3.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler quatro valores num&#233;ricos inteiro A, B, C e D.&#13;&#10;2. Resto da divisao&#13;&#10;3. Se RA2 e RA3 igual a zero, apresentar o valor de A&#13;&#10;4. Se RB2 e RB3 igual a zero, apresentar o valor de B&#13;&#10;5. Se RC2 e RC3 igual a zero, apresentar o valor de C&#13;&#10;6. Se RD2 e RD3 igual a zero, apresentar o valor de D&#13;&#10;"/>
+            <declare name="A, B, C, D" type="Integer" array="False" size=""/>
+            <declare name="MA2, MA3, MB2, MB3, MC2, MC3, MD2, MD3" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <assign variable="MA2" expression="A%2"/>
+            <assign variable="MA3" expression="A%3"/>
+            <assign variable="MB2" expression="B%2"/>
+            <assign variable="MB3" expression="B%3"/>
+            <assign variable="MC2" expression="C%2"/>
+            <assign variable="MC3" expression="C%3"/>
+            <assign variable="MD2" expression="D%2"/>
+            <assign variable="MD3" expression="D%3"/>
+            <if expression="MA2==0 &amp;&amp; MA3==0">
+                <then>
+                    <output expression="A" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="MB2==0 &amp;&amp; MB3==0">
+                <then>
+                    <output expression="B" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="MC2==0 &amp;&amp; MC3==0">
+                <then>
+                    <output expression="C" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="MD2==0 &amp;&amp; MD3==0">
+                <then>
+                    <output expression="D" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

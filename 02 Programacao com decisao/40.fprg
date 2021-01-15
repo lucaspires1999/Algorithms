@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 10:43:33 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjQxOjA5ICI7MjcyNQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjEwOjQzOjMzICI7MTsyODMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Ler um valor num&#233;rico inteiro e apresentar uma mensagem informando se o valor fornecido &#233; par ou &#237;mpar.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1.Ler um valor num&#233;rico N.&#13;&#10;2. Definir se ele &#233; par ou impar, sendo o resto da divis&#227;o por 2 igual a zero.&#13;&#10;3. Se R igual a zero, escrever Par, sen&#227;o, escrever &#205;mpar.&#13;&#10;"/>
+            <declare name="N, R" type="Real" array="False" size=""/>
+            <input variable="N"/>
+            <assign variable="R" expression="N%2"/>
+            <if expression="R=0">
+                <then>
+                    <output expression="&quot;Par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-07 10:43:27 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDc7IjEwOjIyOjM2ICI7MjcyNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDc7IjEwOjQzOjI3ICI7MTsyODM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="String" array="True" size="20"/>
+            <declare name="B" type="String" array="True" size="30"/>
+            <declare name="C" type="String" array="True" size="50"/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <output expression="&quot;A[&quot; &amp; I+1 &amp; &quot;]&quot;" newline="True"/>
+                <input variable="A[I]"/>
+                <assign variable="C[I]" expression="A[I]"/>
+            </for>
+            <for variable="I" start="20" end="49" direction="inc" step="1">
+                <output expression="&quot;B[&quot; &amp; I+1 &amp; &quot;]&quot;" newline="True"/>
+                <input variable="B[I]"/>
+                <assign variable="C[I]" expression="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="49" direction="inc" step="1">
+                <output expression="&quot;C[&quot; &amp; I+1 &amp; &quot;] = &quot; &amp; C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

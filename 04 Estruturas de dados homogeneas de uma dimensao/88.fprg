@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-08 10:38:19 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDg7IjEwOjEzOjMwICI7MjcyMg=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMDg7IjEwOjM4OjE5ICI7MTsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, X, Y, M, C, S, CV" type="Real" array="False" size=""/>
+            <assign variable="X" expression="100"/>
+            <assign variable="Y" expression="0"/>
+            <assign variable="S" expression="0"/>
+            <declare name="A" type="Real" array="True" size="20"/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="S" expression="S+A[I]"/>
+                <if expression="A[I]&gt;X">
+                    <then>
+                        <assign variable="X" expression="A[I]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="A[I]&lt;Y">
+                    <then>
+                        <assign variable="Y" expression="A[I]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="M" expression="S/20"/>
+            <output expression="X" newline="True"/>
+            <output expression="Y" newline="True"/>
+            <output expression="M" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

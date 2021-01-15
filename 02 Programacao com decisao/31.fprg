@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-21 08:55:46 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjUyOjExICI7MjcyNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjE7IjA4OjU1OjQ2ICI7MjsyODQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Efetuar a leitura de dois valores num&#233;ricos inteiros representados pelas vari&#225;veis A e B e apresentar o resultado da diferen&#231;a do maior valor pelo menor valor.  &#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;Ler dois valores inteiros A e B.&#13;&#10;Decis&#227;o se A &gt; B  for verdadeiro, calcular a diferen&#231;a de X = A &#8211; B.&#13;&#10;Sen&#227;o, calcular a diferen&#231;a de X = B &#8211; A.&#13;&#10;Apresentar o valor de X&#13;&#10;"/>
+            <declare name="A, B, X" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <if expression="A&gt;B">
+                <then>
+                    <assign variable="X" expression="A-B"/>
+                </then>
+                <else>
+                    <assign variable="X" expression="B-A"/>
+                </else>
+            </if>
+            <output expression="X" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

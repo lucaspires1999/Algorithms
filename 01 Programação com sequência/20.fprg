@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 03:01:04 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjU0OjQ1ICI7MjcyOQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAzOjAxOjA0ICI7MTsyODI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que leia o valor num&#233;rico correspondente ao sal&#225;rio mensal de um trabalhador e tamb&#233;m fa&#231;a a leitura do valor do percentual de reajuste a ser atribu&#237;do. Apresentar o valor do novo sal&#225;rio.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler o valor num&#233;rico do sal&#225;rio mensal (SM).&#13;&#10;2 Ler o valor do percentual de reajuste a ser atribu&#237;do (PR).&#13;&#10;3 Calcular o novo sal&#225;rio NS = SM * (PR + 1).&#13;&#10;4 Apresentar o novo sal&#225;rio NS."/>
+            <declare name="SM, PR, NS" type="Real" array="False" size=""/>
+            <input variable="SM"/>
+            <input variable="PR"/>
+            <assign variable="NS" expression="SM*(PR + 1)"/>
+            <output expression="NS" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

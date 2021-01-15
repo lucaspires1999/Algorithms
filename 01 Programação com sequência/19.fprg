@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-20 02:51:51 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjQ3OjM2ICI7MjczMQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjA7IjAyOjUxOjUxICI7MTsyODMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="EXERCICIO&#13;&#10;Elaborar um programa que leia quatro valores num&#233;ricos inteiros. Ao final, o programa deve apresentar o resultado do produto do primeiro com o terceiro valor, e o resultado da soma do segundo com o quarto valor.&#13;&#10;"/>
+            <comment text="ENTENDIMENTO&#13;&#10;1 Ler quatro valores num&#233;ricos inteiros A, B, C e D&#13;&#10;2 Calcular o produto do primeiro com o terceiro valor. P = A * C.&#13;&#10;3 Calcular a soma do segundo com o quarto valor. S = B + D.&#13;&#10;4 Apresentar o resultado do produto e da soma. P e S&#13;&#10;"/>
+            <declare name="A, B, C, D, P, S" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <assign variable="P" expression="A*C"/>
+            <assign variable="S" expression="B+D"/>
+            <output expression="P" newline="True"/>
+            <output expression="S" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

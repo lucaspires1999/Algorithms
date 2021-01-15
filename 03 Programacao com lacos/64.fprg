@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-26 06:45:35 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA2OjMyOjM1ICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjAtMTItMjY7IjA2OjQ1OjM1ICI7MTsyODQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, S, M, C" type="Integer" array="False" size=""/>
+            <assign variable="N" expression="0"/>
+            <assign variable="C" expression="0"/>
+            <assign variable="S" expression="0"/>
+            <while expression="N&gt;=0">
+                <input variable="N"/>
+                <if expression="N&gt;=0">
+                    <then>
+                        <assign variable="C" expression="C+1"/>
+                        <assign variable="S" expression="S+N"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <assign variable="M" expression="S/C"/>
+            <output expression="S" newline="True"/>
+            <output expression="M" newline="True"/>
+            <output expression="C" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
