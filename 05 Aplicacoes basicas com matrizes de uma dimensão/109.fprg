@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-25 07:51:44 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjU7IjA3OjA5OjUwICI7MjczNA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjU7IjA3OjUxOjQ0ICI7MzsyODQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RESP" type="String" array="False" size=""/>
+            <declare name="ACHA" type="Boolean" array="False" size=""/>
+            <declare name="PESQ, I, J, X, COME&#199;O, MEIO, FINAL" type="Integer" array="False" size=""/>
+            <declare name="A, B" type="Integer" array="True" size="8"/>
+            <for variable="I" start="0" end="7" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="B[I]" expression="A[I]*5"/>
+            </for>
+            <for variable="I" start="0" end="7" direction="inc" step="1">
+                <for variable="J" start="I+1" end="7" direction="inc" step="1">
+                    <if expression="B[I]&gt;B[J]">
+                        <then>
+                            <assign variable="X" expression="B[I]"/>
+                            <assign variable="B[I]" expression="B[J]"/>
+                            <assign variable="B[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <assign variable="RESP" expression="&quot;SIM&quot;"/>
+            <while expression="RESP==&quot;SIM&quot;">
+                <output expression="&quot;Escreva o numero inteiro a ser pesquisado&quot;" newline="True"/>
+                <input variable="PESQ"/>
+                <assign variable="COME&#199;O" expression="0"/>
+                <assign variable="FINAL" expression="7"/>
+                <assign variable="ACHA" expression="false"/>
+                <while expression="(COME&#199;O&lt;=FINAL) &amp;&amp; (ACHA==false)">
+                    <assign variable="MEIO" expression="(COME&#199;O+FINAL)/2"/>
+                    <if expression="PESQ==B[MEIO]">
+                        <then>
+                            <assign variable="ACHA" expression="true"/>
+                        </then>
+                        <else>
+                            <if expression="PESQ&lt;B[MEIO]">
+                                <then>
+                                    <assign variable="FINAL" expression="MEIO-1"/>
+                                </then>
+                                <else>
+                                    <assign variable="COME&#199;O" expression="MEIO+1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </while>
+                <if expression="ACHA==true">
+                    <then>
+                        <output expression="PESQ &amp; &quot; encontrado na posi&#231;&#227;o &quot; &amp; MEIO+1" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="PESQ &amp; &quot; n&#227;o encontrado&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Deseja continuar?&quot;" newline="True"/>
+                <input variable="RESP"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
