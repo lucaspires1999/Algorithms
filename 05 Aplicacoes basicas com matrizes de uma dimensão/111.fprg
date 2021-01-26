@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-25 10:06:47 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjU7IjA5OjU0OjEzICI7MjczNQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjU7IjEwOjA2OjQ3ICI7MTsyODM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, J, X" type="Integer" array="False" size=""/>
+            <declare name="A, B, C" type="Real" array="True" size="12"/>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <for variable="J" start="I+1" end="11" direction="inc" step="1">
+                    <if expression="A[I]&gt;A[J]">
+                        <then>
+                            <assign variable="X" expression="A[I]"/>
+                            <assign variable="A[I]" expression="A[J]"/>
+                            <assign variable="A[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <for variable="J" start="I+1" end="11" direction="inc" step="1">
+                    <if expression="B[I]&gt;B[J]">
+                        <then>
+                            <assign variable="X" expression="B[I]"/>
+                            <assign variable="B[I]" expression="B[J]"/>
+                            <assign variable="B[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <assign variable="C[I]" expression="A[I]+B[I]"/>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <for variable="J" start="I+1" end="11" direction="inc" step="1">
+                    <if expression="C[J]&gt;C[I]">
+                        <then>
+                            <assign variable="X" expression="C[J]"/>
+                            <assign variable="C[J]" expression="C[I]"/>
+                            <assign variable="C[I]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <output expression="C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
