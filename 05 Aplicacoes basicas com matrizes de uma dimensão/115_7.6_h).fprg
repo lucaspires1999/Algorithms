@@ -4,12 +4,34 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="lucas"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-01-26 05:07:36 "/>
+        <attribute name="saved" value="2021-01-26 10:19:02 "/>
         <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjA1OjA3OjI1ICI7MjczMw=="/>
-        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjA1OjA3OjM2ICI7MTsyODQz"/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjEwOjE5OjAyICI7MjsyODM2"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="I, J, X" type="Integer" array="False" size=""/>
+            <declare name="A, B" type="Integer" array="True" size="20"/>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="B[I]" expression="A[I]*(-1)"/>
+            </for>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <for variable="J" start="I+1" end="19" direction="inc" step="1">
+                    <if expression="B[J]&gt;B[I]">
+                        <then>
+                            <assign variable="X" expression="B[J]"/>
+                            <assign variable="B[J]" expression="B[I]"/>
+                            <assign variable="B[I]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="19" direction="inc" step="1">
+                <output expression="B[I]" newline="True"/>
+            </for>
+        </body>
     </function>
 </flowgorithm>
