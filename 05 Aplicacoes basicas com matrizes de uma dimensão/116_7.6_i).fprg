@@ -4,12 +4,49 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="lucas"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2021-01-26 10:19:20 "/>
+        <attribute name="saved" value="2021-01-26 10:56:53 "/>
         <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjEwOjE5OjA1ICI7MjczMA=="/>
-        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjEwOjE5OjIwICI7MTsyODM1"/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjEwOjU2OjUzICI7MjsyODQz"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="I, J, X" type="Integer" array="False" size=""/>
+            <declare name="A, B" type="Integer" array="True" size="15"/>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="A[I]"/>
+                <assign variable="B[I]" expression="A[I]/2"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="J" start="I+1" end="14" direction="inc" step="1">
+                    <if expression="A[J]&gt;A[I]">
+                        <then>
+                            <assign variable="X" expression="A[J]"/>
+                            <assign variable="A[J]" expression="A[I]"/>
+                            <assign variable="A[I]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="A[I]" newline="True"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="J" start="I+1" end="14" direction="inc" step="1">
+                    <if expression="B[I]&gt;B[J]">
+                        <then>
+                            <assign variable="X" expression="B[J]"/>
+                            <assign variable="B[J]" expression="B[I]"/>
+                            <assign variable="B[I]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="B[I]" newline="True"/>
+            </for>
+        </body>
     </function>
 </flowgorithm>
