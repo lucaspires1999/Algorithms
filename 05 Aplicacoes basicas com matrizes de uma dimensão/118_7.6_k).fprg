@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-27 11:21:54 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjc7IjExOjEzOjM5ICI7MjczMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjc7IjExOjIxOjU0ICI7MTsyODM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="True" size="10"/>
+            <declare name="I, J, X" type="Integer" array="False" size=""/>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <assign variable="C[I]" expression="(A[I]^2)+(B[I]^2)"/>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <for variable="J" start="I+1" end="9" direction="inc" step="1">
+                    <if expression="C[I]&lt;C[J]">
+                        <then>
+                            <assign variable="X" expression="C[I]"/>
+                            <assign variable="C[I]" expression="C[J]"/>
+                            <assign variable="C[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="9" direction="inc" step="1">
+                <output expression="C[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

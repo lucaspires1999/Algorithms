@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-27 11:25:33 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjc7IjExOjEzOjM5ICI7MjczMw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjc7IjExOjI1OjMzICI7MzsyODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, D" type="Integer" array="True" size="15"/>
+            <declare name="I, J, X" type="Integer" array="False" size=""/>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="C[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <assign variable="D[I]" expression="(A[I]^3)+(B[I]^3)+(C[I]^3)"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="J" start="I+1" end="14" direction="inc" step="1">
+                    <if expression="D[I]&gt;D[J]">
+                        <then>
+                            <assign variable="X" expression="D[I]"/>
+                            <assign variable="D[I]" expression="D[J]"/>
+                            <assign variable="D[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="D[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
