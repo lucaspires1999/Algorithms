@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-27 11:11:21 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjY7IjEwOjU2OjU2ICI7MjczNw=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjc7IjExOjExOjIxICI7MTsyODMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, J, X, CONT, SOMATORIO, FATORIAL" type="Integer" array="False" size=""/>
+            <assign variable="SOMATORIO" expression="0"/>
+            <assign variable="FATORIAL" expression="0"/>
+            <assign variable="I" expression="15"/>
+            <declare name="A, B, C, D, E" type="Integer" array="True" size="I"/>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="CONT" start="0" end="I" direction="inc" step="1">
+                    <assign variable="SOMATORIO" expression="SOMATORIO+CONT"/>
+                    <assign variable="C[I]" expression="SOMATORIO"/>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="CONT" start="0" end="I" direction="inc" step="1">
+                    <assign variable="FATORIAL" expression="FATORIAL+CONT"/>
+                    <assign variable="D[I]" expression="FATORIAL"/>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <assign variable="E[I]" expression="(C[I]-D[I])+(A[I]+B[I])"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="J" start="I+1" end="14" direction="inc" step="1">
+                    <if expression="E[I]&gt;E[J]">
+                        <then>
+                            <assign variable="X" expression="E[I]"/>
+                            <assign variable="E[I]" expression="E[J]"/>
+                            <assign variable="E[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <output expression="E[I]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
