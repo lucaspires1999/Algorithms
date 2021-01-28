@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-28 08:56:00 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjg7IjA4OjI5OjQyICI7Mjc0MQ=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjg7IjA4OjU2OjAwICI7MTsyODQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Real" array="True" size="12"/>
+            <declare name="I" type="Integer" array="False" size=""/>
+            <declare name="PESQ" type="Real" array="False" size=""/>
+            <declare name="RESP" type="String" array="False" size=""/>
+            <declare name="ACHA" type="Boolean" array="False" size=""/>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="11" direction="inc" step="1">
+                <assign variable="C[I]" expression="A[I]*B[I]"/>
+            </for>
+            <assign variable="RESP" expression="&quot;SIM&quot;"/>
+            <while expression="RESP==&quot;SIM&quot;">
+                <output expression="&quot;Insira o numero real a ser pesquisado &quot;" newline="True"/>
+                <input variable="PESQ"/>
+                <assign variable="I" expression="0"/>
+                <assign variable="ACHA" expression="false"/>
+                <while expression="(I&lt;11)&amp;&amp;(ACHA==false)">
+                    <if expression="PESQ==C[I]">
+                        <then>
+                            <assign variable="ACHA" expression="true"/>
+                        </then>
+                        <else>
+                            <assign variable="I" expression="I+1"/>
+                        </else>
+                    </if>
+                </while>
+                <if expression="ACHA==true">
+                    <then>
+                        <output expression="PESQ &amp; &quot; encontrado na posicao &quot; &amp; I+1" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="PESQ &amp; &quot;nao encontrado&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Deseja continuar?&quot;" newline="True"/>
+                <input variable="RESP"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

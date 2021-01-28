@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-28 09:37:56 "/>
+        <attribute name="created" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjg7IjA4OjU2OjAzICI7MjczOA=="/>
+        <attribute name="edited" value="bHVjYXM7REVTS1RPUC0yNzJLTDdBOzIwMjEtMDEtMjg7IjA5OjM3OjU2ICI7MTsyODU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="I, J, X, COMECO, MEIO, FINAL" type="Integer" array="False" size=""/>
+            <declare name="A, B, C, D" type="Integer" array="True" size="15"/>
+            <declare name="PESQ" type="Integer" array="False" size=""/>
+            <declare name="ACHA" type="Boolean" array="False" size=""/>
+            <declare name="RESP" type="String" array="False" size=""/>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="A[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="B[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <input variable="C[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <assign variable="D[I]" expression="A[I]+B[I]+C[I]"/>
+            </for>
+            <for variable="I" start="0" end="14" direction="inc" step="1">
+                <for variable="J" start="I+1" end="14" direction="inc" step="1">
+                    <if expression="D[I]&gt;D[J]">
+                        <then>
+                            <assign variable="X" expression="D[I]"/>
+                            <assign variable="D[I]" expression="D[J]"/>
+                            <assign variable="D[J]" expression="X"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <assign variable="RESP" expression="&quot;SIM&quot;"/>
+            <while expression="RESP==&quot;SIM&quot;">
+                <output expression="&quot;Insira o numero real a ser pesquisado na matriz D&quot;" newline="True"/>
+                <input variable="PESQ"/>
+                <assign variable="ACHA" expression="false"/>
+                <assign variable="COMECO" expression="0"/>
+                <assign variable="FINAL" expression="14"/>
+                <while expression="(COMECO&lt;=FINAL) &amp;&amp; (ACHA==false)">
+                    <assign variable="MEIO" expression="(COMECO+FINAL)/2"/>
+                    <if expression="PESQ==D[MEIO]">
+                        <then>
+                            <assign variable="ACHA" expression="true"/>
+                        </then>
+                        <else>
+                            <if expression="D[MEIO]&lt;PESQ">
+                                <then>
+                                    <assign variable="COMECO" expression="MEIO+1"/>
+                                </then>
+                                <else>
+                                    <assign variable="FINAL" expression="MEIO-1"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </while>
+                <if expression="ACHA==true">
+                    <then>
+                        <output expression="PESQ &amp; &quot; encontrado na posicao &quot; &amp; MEIO+1" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="PESQ &amp; &quot; nao encontrado&quot;" newline="True"/>
+                    </else>
+                </if>
+                <output expression="&quot;Deseja continuar?&quot;" newline="True"/>
+                <input variable="RESP"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
